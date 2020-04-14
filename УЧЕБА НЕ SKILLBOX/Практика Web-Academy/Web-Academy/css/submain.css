@@ -1,0 +1,135 @@
+/* Внутрення страница */
+
+.header-inner {
+  background-color: #e3f0f7;
+  padding: 50px 0;
+}
+
+.header-inner-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-inner {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.logo-inner span {
+  font-size: 22px;
+}
+
+.project-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.project-heding {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.badges-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.badge {
+  height: 26px;
+  line-height: 26px;
+  color: white;
+  padding: 0 10px 0 10px;
+  background-color: #969696;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.badge-html {
+  background-color: #ff861a;
+}
+
+.badge-css {
+  background-color: #039be5;
+}
+
+.badge-bootstrap {
+  background-color: #a062c7;
+}
+
+.project-page-descr {
+  width: 575px;
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.project-page-descr p {
+  margin-bottom: 20px;
+}
+
+.project-page-descr a {
+  color: #039be5;
+  border-bottom: 1px solid #039be5;
+}
+
+.project-page-img {
+  text-align: center;
+}
+
+.project-page-img img {
+  box-shadow: 20px 20px 100px 0px rgba(196, 219, 233, 0.5);
+  margin-bottom: 55px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.pagination-btn {
+  display: inline-block;
+  width: calc( 50% - 5px );
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid #d0e9f5;
+  font-size: 22px;
+  font-weight: 300;
+  color: #069ce5;
+  text-align: center;
+}
+
+.pagination-btn:hover {
+  background-color: #bdb1d3;
+  color: white;
+  text-shadow: 0px 5px 15px #000;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+/* .pagination-next {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid #d0e9f5;
+  font-size: 22px;
+  font-weight: 300;
+  color: #069ce5;
+}
+ */
+
+ .footer-inner-page {
+   text-align: center;
+   margin-bottom: 80px;
+ }

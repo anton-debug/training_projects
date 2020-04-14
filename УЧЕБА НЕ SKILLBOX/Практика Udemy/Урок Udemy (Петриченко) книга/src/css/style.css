@@ -1,0 +1,44 @@
+body {
+    background-color: #ffffe0;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-transform: uppercase; /* Все буквы заглавные */
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 1px; /* Расстояние между буквами */
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+    margin: 40px;
+}
+
+span {
+    font-style: italic;
+}
+
+img {
+    display: block;/* Сделали картинки как блочные элементы */
+    margin: 0 auto; /* Выравниваем картинки по центру */
+    margin: 40px auto; /* Отступ сверху и снизу 40px, по бокам авто */
+    border: black 2px solid; 
+    border-radius: 15px;
+}
+
+hr {
+    border-color: #7a7575;
+    width: 100%;
+}
+

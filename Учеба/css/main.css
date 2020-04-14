@@ -1,0 +1,14 @@
+body {
+	font-family: Arial, sans-serif;
+	color: red;
+	padding: 0;
+	margin: 0;
+}
+header {
+	background: url(../img/20190330_203743.jpg) no-repeat center top / cover;
+    /* вставка изображение на фон страницы */
+    height: 5000px;
+    /* высота картинки */
+    transform: rotate(270deg);
+    /* поворот изображения на 270 гр. */
+}

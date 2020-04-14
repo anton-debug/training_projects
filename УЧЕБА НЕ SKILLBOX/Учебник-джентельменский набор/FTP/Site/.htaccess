@@ -1,0 +1,10 @@
+ErrorDocument 401 /err401.php
+ErrorDocument 403 /err403.php
+ErrorDocument 404 /err404.php
+php_value include_path ".;C:/xampp/php/includes/config"
+AddDefaultCharset windows-1251
+php_value default_charset "windows-1251"
+php_value error_reporting 32767
+<Files err*.txt>
+   Deny from all
+</Files>

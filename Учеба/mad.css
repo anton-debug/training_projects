@@ -1,0 +1,14 @@
+body {
+	background-color: #00ffff;
+	font-family: 'Skranji', cursive;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	background: url(img/flame.jpg) no-repeat center;
+	background-size: cover;
+h1 {
+	text-shadow: 0 0 12px 10px
+}
+
+
+}

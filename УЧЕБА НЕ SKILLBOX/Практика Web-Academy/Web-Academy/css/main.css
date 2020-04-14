@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* Верх сайта */
+.header {
+  padding-top: 55px;
+  padding-bottom: 70px;
+}
+
+.heading-1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 45px;
+  line-height: 67px;
+}
+
+.sub-heading {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  margin-right: 27px;
+  text-decoration: none;
+}
+
+/*Обо мне*/
+
+.about-me{
+  background-color: #e3f0f7;
+  padding: 80px 0;
+}
+
+.about-me-heading-big {
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.about-me-heading-smal {
+  margin-top: 63px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about-me-text {
+  float: left;
+  width: 582px;
+}
+
+.about-me-foto {
+  float: right;
+}
+
+.about-me-text p {
+  margin-top: 21px;
+  font-size: 28px;
+  line-height: 1.5;
+  padding-right: 70px;
+}
+
+.about-me-text ul {
+  margin-top: 10px;
+}
+
+.about-me-text ul li {
+  list-style-type: none;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-left: 18px;
+}
+
+.about-me-text ul li::before {
+  content: "-";
+  padding-right: 5px;
+}
+
+/* Портфолио */
+
+.portfolio-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.name-project {
+  margin-right: 15px;
+  margin-bottom: 130px;
+}
+
+.name-project:last-child {
+  margin-bottom: 0;
+}
+
+.name-project:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+
+.name-project:nth-child(2n) {
+  margin-right: 0;
+}
+
+.name-project-heading {
+  font-size: 34px;
+  font-weight: bold;
+  padding: 0 0 0 25px;
+  margin-top: 15px;
+}
+
+.name-project-subheading {
+  font-size: 28px;
+  font-weight: 100;
+  padding: 0 0 0 25px;
+  margin: 8px 0 17px 0;
+}
+
+.link-site {
+  font-size: 16px;
+  color: #969696;
+  font-weight: 100;
+  font-style: italic;
+  padding: 0 0 0 25px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 90px;
+  padding-bottom: 90px;
+}
+.footer-heading {
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer-txt-email {
+  font-size: 36px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.email {
+  color: #4298e8;
+  border-bottom: 1px solid #4298e8;
+}
+
