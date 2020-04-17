@@ -1,6 +1,6 @@
 :root {
 	--mainColor: #69b0ac;
-	--headerColor: #eef9ff;
+	--headerColor: #f6f6f5;
 }
 
 
@@ -256,7 +256,8 @@ body {
 .header-img {
     position: absolute;
     bottom: 0;
-    right: -93px;
+	right: -93px;
+	height: 750px;
 }
 
 @media (max-width: 992px) {
@@ -283,11 +284,11 @@ body {
 }
 
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 	.header__arrow {
 		display: none;
 	}
-}
+} */
 
 /* Вторая секция */
 
