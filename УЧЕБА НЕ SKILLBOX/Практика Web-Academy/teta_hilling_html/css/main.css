@@ -251,6 +251,13 @@ body {
 		height: auto;
 	}
 }
+/* @media (max-width: 500px) {
+	.header-img__wrapper {
+		position: static;
+		transform: translate(0, 0);
+		height: 50%;
+	}
+} */
 
 
 .header-img {
@@ -271,9 +278,14 @@ body {
 
 
 /* Кнопка для прокрутки вниз */
+.arrow-block {
+	position: relative;
+}
+
 .header__arrow {
     position: absolute;
-    bottom: 0;
+	bottom: 0;
+	top: 0;
     left: 50%;
     transform: translateX(-50%);
 }

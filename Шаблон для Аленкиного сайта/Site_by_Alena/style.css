@@ -308,7 +308,8 @@ h1 span {
 
 .img_container {
     background-color: #f5f5f5;
-    margin-top: 130px
+    margin-top: 130px;
+    padding-bottom: 20px;
 }
 
 .img_portfolio h2 span {

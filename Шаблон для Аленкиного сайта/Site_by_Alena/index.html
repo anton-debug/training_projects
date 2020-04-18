@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_slide.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -108,10 +111,10 @@
         </div>
     </div>
 
-    <div class="img_container">
-        <div class="container">
-            <!-- <a name="bestWorks"></!--> -->
-            <section class="img_portfolio">
+    <!-- <div class="img_container">
+        <div class="container"> -->
+            <!-- <a name="bestWorks"></!--> 
+            <!-- <section class="img_portfolio">
                 <h2 id="bestWorks"><span>Лучшие</span> работы</h2>
                 <p class="img_portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
 
@@ -128,7 +131,40 @@
                 </div>
             </section>
         </div>
+    </div> -->
+
+    <!-- Карусель для фото -->
+    <div class="img_container">
+        <div class="container">
+            <section class="img_portfolio">
+                <h2 id="bestWorks"><span>Лучшие</span> работы</h2>
+                <p class="img_portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+                <div id="wrapper">
+                    <div id="container">
+                        <div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+                        <div id="slider">
+                            <ul>
+                                <li><img src="./img/master.jpg" width="300" height="500" alt="Первое фото" /></li>
+                                <li><img src="./img/woman.png" width="500" height="500" alt="Второе фото" /></li>
+                                <li><img src="./img/work__process.jpg" width="500" height="500" alt="Третье фото" /></li>
+                                <li><img src="./img/resize.jpg" width="500" height="500" alt="Четвертое фото" /></li>
+                                <li><img src="./img/apple-watch.png" width="500" height="500" alt="Пятое фото" /></li>
+                            </ul>
+                        </div>
+                        <div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+                        <ul id="pagination" class="pagination">
+                            <li onclick="slideshow.pos(0)" class></li>
+                            <li onclick="slideshow.pos(1)" class></li>
+                            <li onclick="slideshow.pos(2)" class></li>
+                            <li onclick="slideshow.pos(3)" class></li>
+                            <li onclick="slideshow.pos(4)" class></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>    
+        </div>
     </div>
+    <!-- // Карусель для фото -->
 
     <footer class="cont" id="ourContacts">
         <div class="container">
@@ -176,7 +212,28 @@
     </footer>
 
     <a href="#top" class="up up-arrow">&#8593;<br>на верх</a>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
-    <script src="main.js"></script>
+    
+    
+    <!-- Начальный скрипт слайдера, остальное в slider.js
+    Ничего не понимаю пока, скопировано с 
+    https://web-stydia.com/wp-content/uploads/example_file/sliders-2/ -->
+    <script src="slider.js"></script>
+    <script type="text/javascript">
+        var slideshow=new TINY.slider.slide('slideshow',{
+            id: 'slider',
+            auto: 4,
+            resume: false,
+            vertical: false,
+            navid: 'pagination',
+            activeclass: 'current',
+            position: 0,
+            rewind: false,
+            elastic: true,
+            left: 'slideleft',
+            right: 'slideright'
+        });
+    </script>
+    
+    
 </body>
 </html>
