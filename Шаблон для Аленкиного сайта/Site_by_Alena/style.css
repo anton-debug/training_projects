@@ -24,10 +24,22 @@ body {
     position: relative;
 }
 
+@font-face {
+    font-family: "Pacifico";
+    src: url("fonts/Pacifico-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* HEADER  _______START */
 
 header {
-    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, 
+                    #edeff2,
+                    #e8f2f5,
+                    #e3f5f4,
+                    #e5f7ec, 
+                    #f0f6e2);
 }
 
 .container {
@@ -47,29 +59,34 @@ header {
 
 /* При нажатии на кнопку с лого переход к контактам */
 
-.logo {
+/* .logo { */
     /*    display: inline-block;*/
-    text-align: center;
-}
+    /* text-align: center; */
+/* } */
 
-.logo:hover {
+/* .logo:hover { */
     /*    text-align: center;*/
     /*    background: url('img/resizeopasity.png') no-repeat center/contain;*/
     /*    background-position: left;*/
-    transform: rotate(1deg);
-    transition: 0.5s;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
-    opacity: 0.5;
-    transform: scale(1.01);
-    background-color: #f5f5f5;
+    /* transform: rotate(1deg); */
+    /* transition: 0.5s; */
+    /* box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); */
+    /* opacity: 0.5; */
+    /* transform: scale(1.01); */
+    /* background-color: #f5f5f5; */
 
-}
-
-
-
+/* } */
 
 .nav_footer {
     margin-top: 0px;
+}
+
+.footer-logo__heading {
+    text-align: center;
+    font-family: "Pacifico";
+    margin: 0;
+    padding: 15px;
+
 }
 
 .nav_footer ul {
@@ -146,7 +163,7 @@ h1 span {
     border-radius: 27px;
     height: 20px;
     width: 200px;
-    padding: 15px 10px;
+    padding: 15px 0 30px 0;
     text-align: center;
     margin: 0 auto;
     /* animation: pulse 2s ease-out infinite; */
@@ -280,29 +297,35 @@ h1 span {
 /* Кнопка WORKING */
 
 .props_block-btn {
-    background-color: #fff;
+    /* background-color: #fff; */
     display: block;
-    border: 0.05px solid #e7e7e7;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
-    border-radius: 27px;
-    height: 20px;
-    width: 200px;
-    padding: 15px 10px;
-    margin: 0 auto;
-    margin-top: 30px;
+    /* border: 0.05px solid #e7e7e7; */
+    /* box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 27px; */
+    /* height: 20px; */
+    /* width: 200px; */
+    /* padding: 15px 10px; */
+    /* margin: 0 auto; */
+    margin-top: 40px;
     position: absolute;
     top: 177px;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.props_block-btn:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 /* Крестик слева кнопки */
 
-.props_block-btn span {
+/* .props_block-btn span {
     background: url("img/%D0%BAectangle.png") no-repeat;
     background-position: left;
     padding-left: 30px;
-}
+} */
 
 /* Блок портфолио */
 

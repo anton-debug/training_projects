@@ -16,12 +16,14 @@
     <header class="footer" id="top">
         <div class="container">
             <!-- <a name="top"></a> -->
-            <div class="logo">
-                <img src="img/beautyes.png" alt="logo" class="header_logo" width='150' height="150">
-                
-            </div>
+            <h1 class="footer-logo__heading">Елена Солдатова</h1>
 
             <nav class="nav_footer">
+                <!-- <div class="logo">
+                    <img src="img/beautyes.png" alt="logo" class="header_logo" width='150' height="150">
+                    
+                </div> -->
+                
                 <ul>
                     <li>
                         <!-- Ставим якоря -->
@@ -53,19 +55,19 @@
             <section class="heading">
                 <h1><span>Свадебный</span> стилист</h1>
                 <p class="heading_text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita modi, maxime ipsam, ipsum laborum ullam accusantium laboriosam? Temporibus quasi modi, beatae earum. Beatae dolores, ullam, quae voluptate officiis eveniet asperiores!
+                    Выбор свадебного платья может быть почти таким же сложным, как выбор жениха. А выбор хорошего стилиста сложнее, чем поиск безупречного платья!
                 </p>
 
-                <form action="#" class="heading_form">
+                <form action="send.php" method="post" class="heading_form">
                     <p><span>Напиши</span> нам</p>
 
-                    <input type="search" class="input_search" name="name" placeholder="Ваше имя">
+                    <input type="text" class="input_search" name="name" placeholder="Ваше имя" required>
 
-                    <input type="search" class="input_tel" name="tel" placeholder="Ваш телефон">
+                    <input type="text" class="input_tel" name="tel" placeholder="Ваш телефон" required>
 
-                    <textarea name="" id="heading_textarea" placeholder="Сообщение"></textarea>
+                    <textarea name="message" id="heading_textarea" placeholder="Сообщение" required></textarea>
 
-                    <a href="#" class="heading_form-btn">Записаться</a>
+                    <input type="submit" class="heading_form-btn" value="Записаться" name="scribe">
                 </form>
             </section>
         </div>
@@ -80,28 +82,28 @@
 
                 <div class="props_block">
                     <div class="props_block_item props_block-1">
-                        <img src="img/magnet%EF%81%B6.png" alt="Магнит">
+                        <img src="img/icons8-парикмахерская-64.png" alt="Магнит">
                         <h3>Мужская стрижка</h3>
                         <p>Крутые мужские стрижки - только посмотрите</p>
                         <a href="#" class="props_block-btn"><span>Подробнее</span></a>
                     </div>
 
                     <div class="props_block_item props_block-2">
-                        <img src="img/roach%EF%86%88.png" alt="Жук">
+                        <img src="img/icons8-парикмахерские-ножницы-64.png" alt="Жук">
                         <h3>Женская стрижка</h3>
                         <p>Женственность это наше все</p>
                         <a href="#" class="props_block-btn"><span>Подробнее</span></a>
                     </div>
 
                     <div class="props_block_item props_block-3">
-                        <img src="img/mechanical%EF%82%85.png" alt="Механизм">
+                        <img src="img/icons8-парикмахерское-кресло-50.png" alt="Механизм">
                         <h3>Детские стрижки</h3>
                         <p>Мода идет видимо отсюда</p>
                         <a href="#" class="props_block-btn"><span>Подробнее</span></a>
                     </div>
 
                     <div class="props_block_item props_block-4">
-                        <img src="img/camera%EF%82%83.png" alt="Камера">
+                        <img src="img/icons8-расческа-50.png" alt="Камера">
                         <h3>Окрашивание</h3>
                         <p>Нужен классный и модный окрас - считай сделано</p>
                         <a href="#" class="props_block-btn"><span>Подробнее</span></a>
