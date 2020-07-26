@@ -97,10 +97,14 @@ header {
     justify-content: space-around;
 }
 
+.nav_footer ul li a {
+    transition: 0.3s;
+}
+
 .nav_footer ul li a:hover {
     color: #7cc3f1;
     text-decoration: underline;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .heading {
@@ -131,21 +135,20 @@ h1 span {
     width: 300px;
     padding: 15px 30px 15px 30px;
     margin-top: 115px;
+    transition: 0.5s;
 }
 
 .heading_form:hover {
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
     transform: scale(1.04);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .heading_form p span {
     color: #7cc3f1;
 }
 
-.input_search,
-.input_tel,
-#heading_textarea {
+.form-input {
     border: none;
     border-bottom: 1px solid #c7c7c7;
     resize: none;
@@ -166,6 +169,7 @@ h1 span {
     padding: 15px 0 30px 0;
     text-align: center;
     margin: 0 auto;
+    transition: 0.3s;
     /* animation: pulse 2s ease-out infinite; */
 }
 
@@ -250,6 +254,7 @@ h1 span {
     margin-right: 30px;
     text-align: center;
     padding: 40px 20px 40px 20px;
+    transition: 0.3s;
 }
 
 .props_block-1:hover {
@@ -387,12 +392,17 @@ h1 span {
 .cont-soc__list {
     list-style: none;
     margin-right: 15px;
+    
 }
 
 .cont-soc__connection {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cont-list__item img {
+    transition: 0.3s;
 }
 
 .cont-list__item img:hover {
@@ -417,6 +427,7 @@ h1 span {
     background-repeat: no-repeat;
     background-position: left;
     padding: 48px 0 48px 60px;
+    transition: 0.3s;
 }
 
 .cont-list__link:hover {

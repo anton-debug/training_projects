@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_slide.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="slick.css">
+    
+    <!-- <link rel="stylesheet" href="style_slide.css"> -->
+    
 </head>
 
 <body>
@@ -58,16 +60,30 @@
                     Выбор свадебного платья может быть почти таким же сложным, как выбор жениха. А выбор хорошего стилиста сложнее, чем поиск безупречного платья!
                 </p>
 
-                <form action="send.php" method="post" class="heading_form">
-                    <p><span>Напиши</span> нам</p>
+                <form class="heading_form">
+                    <p><span>Перезвонить</span> Вам</p>
 
-                    <input type="text" class="input_search" name="name" placeholder="Ваше имя" required>
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="http://soldatoff27.siteme.org/">
 
-                    <input type="text" class="input_tel" name="tel" placeholder="Ваш телефон" required>
+                    <input type="hidden" name="admin_email" value="sold24@yandex.ru">
 
-                    <textarea name="message" id="heading_textarea" placeholder="Сообщение" required></textarea>
+                    <input type="hidden" name="form_subject" value="Заявка с верхней формы">
+                    <!-- END Hidden Required Fields -->
 
-                    <input type="submit" class="heading_form-btn" value="Записаться" name="scribe">
+                    <!-- Наша форма -->
+
+                    <input type="text" class="form-input" name="Имя Фамилия" placeholder="Ваше имя и Фамилия" required>
+
+                    <input type="text" class="form-input" name="Телефон" placeholder="Ваш телефон" required>
+
+                    <input type="number" class="form-input" name="Сколько Вас" placeholder="Сколько Вас" required>
+
+                    <textarea name="Сообщение" class="form-input" placeholder="Сообщение" required></textarea>
+
+                    <button class="heading_form-btn">Записаться</button>
+
+                    <!-- Наша форма -->
                 </form>
             </section>
         </div>
@@ -136,7 +152,7 @@
     </div> -->
 
     <!-- Карусель для фото -->
-    <div class="img_container">
+    <!-- <div class="img_container">
         <div class="container">
             <section class="img_portfolio">
                 <h2 id="bestWorks"><span>Лучшие</span> работы</h2>
@@ -165,8 +181,19 @@
                 </div>
             </section>    
         </div>
-    </div>
+    </div> -->
     <!-- // Карусель для фото -->
+    <div class="container">
+        <section class="img_portfolio">
+            <h2 id="bestWorks"><span>Лучшие</span> работы</h2>
+            <p class="img_portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+            <div class="slickslider">
+                <div><img src="img/work__process.jpg" alt=""></div>
+                <div><img src="img/master.jpg" alt=""></div>
+                <div><img src="img/woman.png" alt=""></div>
+            </div>
+        </section>
+    </div>
 
     <footer class="cont" id="ourContacts">
         <div class="container">
@@ -219,7 +246,7 @@
     <!-- Начальный скрипт слайдера, остальное в slider.js
     Ничего не понимаю пока, скопировано с 
     https://web-stydia.com/wp-content/uploads/example_file/sliders-2/ -->
-    <script src="slider.js"></script>
+    <!-- <script src="slider.js"></script>
     <script type="text/javascript">
         var slideshow=new TINY.slider.slide('slideshow',{
             id: 'slider',
@@ -234,8 +261,11 @@
             left: 'slideleft',
             right: 'slideright'
         });
-    </script>
-    
-    
+    </script> -->
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script src="slick.js"></script>
+    <script src="main.js"></script>
+    <script src="./scriptform/script.js"></script>
 </body>
 </html>
